@@ -1,4 +1,4 @@
-package hackerearth.basicprogramming.inputoutput;
+package utils;
 
 import java.util.Scanner;
 
