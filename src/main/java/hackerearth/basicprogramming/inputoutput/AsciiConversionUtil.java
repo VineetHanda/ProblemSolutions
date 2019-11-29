@@ -2,7 +2,7 @@ package hackerearth.basicprogramming.inputoutput;
 
 import java.util.Scanner;
 
-public class AsciiConvertion {
+public class AsciiConversionUtil {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int testCases = sc.nextInt();
@@ -20,12 +20,16 @@ public class AsciiConvertion {
     private static StringBuilder convertToAsciiString(int inputLength, String inputString){
         StringBuilder outputString = new StringBuilder();
         for(int i = 0; i < inputLength; i++){
-            if(!isPrime(inputString.charAt(i)) ){
-                outputString.append(replaceAsciiChar(inputString.charAt(i)));
+            char endCaseChar = ignoreEndCase(inputString.charAt(i));
+            if(endCaseChar == inputString.charAt(i)) {
+                if (!isPrime(inputString.charAt(i))) {
+                    outputString.append(replaceAsciiChar(inputString.charAt(i)));
+                } else {
+                    outputString.append(inputString.charAt(i));
+                }
             }
-            else {
-                outputString.append(inputString.charAt(i));
-            }
+            else
+                outputString.append(endCaseChar);
         }
         return outputString;
     }
@@ -46,7 +50,6 @@ public class AsciiConvertion {
 
     private static char getNearestAsciiValue(char inputChar) {
         int asciiInput = inputChar;
-        System.out.println("here"+asciiInput);
         if(asciiInput<65)
             return 'C';
         else if(asciiInput>122)
@@ -80,5 +83,13 @@ public class AsciiConvertion {
             return outputLesser;
         else
             return outputGreater;
+    }
+
+    private static char ignoreEndCase(char input){
+        if(((int)input) < 65)
+            return 'C';
+        else if(((int)input) > 122)
+            return 'q';
+        else return input;
     }
 }
