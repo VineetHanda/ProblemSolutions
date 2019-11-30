@@ -3,6 +3,52 @@ package hackerearth.basicprogramming.inputoutput;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/*
+Problem Link: https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/mojtaba-prepares-contest-29b2a044/
+
+Input format
+
+First line: T that denotes the number of test cases (1 <= T <= 10)
+For each test case:
+First line: Cost of green and purple-colored balloons
+Second line: n that denotes the number of participants (1 <= n <= 10)
+Next n lines: Contain the status of users. For example, if the value of the jth integer in the ith row is 0, then it depicts that the ith participant has not solved the jth problem. Similarly, if the value of the jth integer in the ith row is 1, then it depicts that the  participant has solved the jth problem.
+Output format
+For each test case, print the minimum cost that you have to pay to purchase balloons.
+
+SAMPLE INPUT
+2
+9 6
+10
+1 1
+1 1
+0 1
+0 0
+0 1
+0 0
+0 1
+0 1
+1 1
+0 0
+1 9
+10
+0 1
+0 0
+0 0
+0 1
+1 0
+0 1
+0 1
+0 0
+0 1
+0 0
+SAMPLE OUTPUT
+69
+14
+
+
+*/
+
 public class CostOfBaloons {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

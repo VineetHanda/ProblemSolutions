@@ -1,6 +1,35 @@
 package hackerearth.basicprogramming.inputoutput;
 import java.util.Scanner;
 
+/*
+Problem Link: https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/anagrams-651/
+
+Input :
+
+test cases,t
+two strings a and b, for each test case
+Output:
+
+Desired O/p
+
+Constraints :
+
+string lengths<=10000
+
+Note :
+
+Anagram of a word is formed by rearranging the letters of the word.
+
+For e.g. -> For the word RAM - MAR,ARM,AMR,RMA etc. are few anagrams.
+
+SAMPLE INPUT
+1
+cde
+abc
+SAMPLE OUTPUT
+4
+*/
+
 public class Anagrams {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

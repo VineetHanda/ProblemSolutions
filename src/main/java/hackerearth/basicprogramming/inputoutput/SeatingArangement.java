@@ -3,6 +3,26 @@ package hackerearth.basicprogramming.inputoutput;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/*
+Problem Link: https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/seating-arrangement-1/
+INPUT
+First line of input will consist of a single integer T denoting number of test-cases. Each test-case consists of a single integer N denoting the seat-number.
+
+OUTPUT
+For each test case, print the facing seat-number and the seat-type, separated by a single space in a new line.
+
+CONSTRAINTS
+1<=T<=105
+1<=N<=108
+SAMPLE INPUT
+2
+18
+40
+SAMPLE OUTPUT
+19 WS
+45 AS
+*/
+
 public class SeatingArangement {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,27 +1,46 @@
 package hackerearth.basicprogramming.inputoutput;
+
 import java.util.Scanner;
-class PrimeNumbers {
-    public static void main(String[] args ){
+
+/*
+Problem Link: https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/prime-number-8/description/
+
+Input Format
+
+The first and only line of the input contains a single integer N denoting the number till where you need to find the series of prime number.
+
+Output Format
+
+Print the desired output in single line separated by spaces.
+
+Constraints
+
+1<=N<=1000
+
+SAMPLE INPUT
+9
+SAMPLE OUTPUT
+2 3 5 7
+*/
+
+public class PrimeNumbers {
+    public static void main(String[] args) {
+        //Scanner
         Scanner s = new Scanner(System.in);
-        int T = s.nextInt();
-        int[] num = new int[T];
-        for(int i=0; i <T;i++){
-            num[i] = s.nextInt();
+        int limit = s.nextInt();               // Reading input from STDIN
+        for(int i = 2; i <= limit; i++){
+            if(checkPrime(i))
+                System.out.print(i+" ");
         }
 
-        for(int i = 0; i<num.length; i++){
-            int n = num[i];
-            for(int j = 1; j <=n;j++){
-                if (j%3 == 0 && j%5 == 0)
-                    System.out.println("FizzBuzz");
-                else if(j%5 == 0)
-                    System.out.println("Buzz");
-                else if(j%3 == 0)
-                    System.out.println("Fizz");
-                else
-                    System.out.println(j);
+    }
+
+    public static boolean checkPrime(int number){
+        for(int i = 2; i <= number/2 ; i++){
+            if(number%i == 0){
+                return false;
             }
         }
-
+        return true;
     }
 }

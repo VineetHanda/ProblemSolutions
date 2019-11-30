@@ -2,7 +2,28 @@ package hackerearth.basicprogramming.inputoutput;
 
 import java.util.Scanner;
 
-public class Palindrome {
+/*
+Problem Link: https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/palindrome-check-2/
+
+Input Format
+The first and only line of input contains the String S. The String shall consist of lowercase English alphabets only.
+
+Output Format
+Print the required answer on a single line.
+
+Constraints
+1 <= |S| <= 100
+
+Note
+String S consists of lowercase English Alphabets only.
+
+SAMPLE INPUT
+aba
+SAMPLE OUTPUT
+YES
+*/
+
+public class PalindromicString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.next();

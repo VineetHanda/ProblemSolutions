@@ -2,7 +2,35 @@ package hackerearth.basicprogramming.inputoutput;
 
 import java.util.Scanner;
 
-public class AsciiConversionUtil {
+/*
+Problem Link: https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/magical-word/
+
+Input format:
+
+First line of input contains an integer T number of test cases. Each test case contains an integer N (denoting the length of the string) and a string S.
+
+Output Format:
+
+For each test case, print Dhananjay's Magical Word in a new line.
+
+Constraints:
+
+1 <= T <= 100
+
+1 <= |S| <= 500
+
+SAMPLE INPUT
+1
+6
+AFREEN
+SAMPLE OUTPUT
+CGSCCO
+
+Explanation
+ASCII values of alphabets in AFREEN are 65, 70, 82, 69 ,69 and 78 respectively which are converted to CGSCCO with ASCII values 67, 71, 83, 67, 67, 79 respectively. All such ASCII values are prime numbers.
+*/
+
+public class MagicalWord {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int testCases = sc.nextInt();
