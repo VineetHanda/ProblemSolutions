@@ -5,7 +5,9 @@ package codility;
 
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
-
+/*
+Problem Link: https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
+ */
 import java.util.Arrays;
 
 class OddOccurrences {
